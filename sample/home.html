@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Portfolio</title>
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+
+    <div class="profile">
+
+    <img src="images1.png" alt="Profile" class="profile-img">
+
+    <h3>Jessa May Ganda</h3>
+    <p>BSIT Student</p>
+
+</div>
+<h2>E-Portfolio</h2>
+
+<ul>
+
+<!-- BASIC -->
+<li><button onclick="showSection('title')"><i class="fas fa-file"></i> Title Page</button></li>
+<li><button onclick="showSection('ack')"><i class="fas fa-handshake"></i> Acknowledgement</button></li>
+<li><button onclick="showSection('toc')"><i class="fas fa-list"></i> Table of Contents</button></li>
+<li><button onclick="showSection('prayer')"><i class="fas fa-praying-hands"></i> Prayer</button></li>
+<li><button onclick="showSection('philosophy')"><i class="fas fa-lightbulb"></i> Philosophy</button></li>
+<li><button onclick="showSection('career')"><i class="fas fa-briefcase"></i> Career Plan</button></li>
+
+<!-- CHAPTER I -->
+<li class="dropdown">
+<button onclick="toggleMenu(this)"><i class="fas fa-book"></i> Chapter I ▾</button>
+<ul class="submenu">
+<li><button onclick="showSection('c1a')"><i class="fas fa-star"></i> Importance</button></li>
+<li><button onclick="showSection('c1b')"><i class="fas fa-bullseye"></i> Objectives</button></li>
+<li><button onclick="showSection('c1c')"><i class="fas fa-clock"></i> Time & Place</button></li>
+</ul>
+</li>
+
+<!-- CHAPTER II -->
+<li class="dropdown">
+<button onclick="toggleMenu(this)"><i class="fas fa-building"></i> Chapter II ▾</button>
+<ul class="submenu">
+<li><button onclick="showSection('c2a')"><i class="fas fa-industry"></i> Nature</button></li>
+<li><button onclick="showSection('c2b')"><i class="fas fa-eye"></i> Mission/Vision</button></li>
+<li><button onclick="showSection('c2c')"><i class="fas fa-history"></i> History</button></li>
+<li><button onclick="showSection('c2d')"><i class="fas fa-sitemap"></i> Structure</button></li>
+</ul>
+</li>
+
+<!-- CHAPTER III -->
+<li class="dropdown">
+<button onclick="toggleMenu(this)"><i class="fas fa-tools"></i> Chapter III ▾</button>
+<ul class="submenu">
+<li><button onclick="showSection('c3a')"><i class="fas fa-calendar-week"></i> Weekly</button></li>
+<li><button onclick="showSection('c3b')"><i class="fas fa-clock"></i> DTR</button></li>
+<li><button onclick="showSection('c3c')"><i class="fas fa-chart-line"></i> Progress</button></li>
+<li><button onclick="showSection('c3d')"><i class="fas fa-chart-pie"></i> Analysis</button></li>
+</ul>
+</li>
+
+<!-- CHAPTER IV -->
+<li class="dropdown">
+<button onclick="toggleMenu(this)"><i class="fas fa-chart-bar"></i> Chapter IV ▾</button>
+<ul class="submenu">
+<li><button onclick="showSection('c4a')"><i class="fas fa-check-circle"></i> Evaluation</button></li>
+</ul>
+</li>
+
+<!-- APPENDICES -->
+<li><button onclick="showSection('appendix')"><i class="fas fa-folder"></i> Appendices</button></li>
+
+</ul>
+
+<button class="back-btn" onclick="goBack()">
+    <span class="arrow">←</span>
+    <span class="text">Back</span>
+</button>
+
+</aside>
+
+<!-- MAIN CONTENT -->
+<main class="main">
+        <!-- TITLE PAGE -->
+<section id="title" class="card active">
+  <!-- LOGOS -->
+    <div class="title-logos">
+        <img src="logo1.png">
+        <img src="logo2.png">
+        <img src="logo3.png">
+    </div>
+
+    <!-- TITLE -->
+    <h1 class="title-main">ON-THE-JOB-TRAINING</h1>
+    <p class="title-sub">COLLEGE OF ARTS, SCIENCE, AND TECHNOLOGY</p>
+
+    <!-- GRID -->
+    <div class="title-grid">
+
+        <div class="title-card">
+            <div class="icon">👤</div>
+            <div>
+                <span>Student Name</span>
+                <p>Jessa May Ganda</p>
+            </div>
+        </div>
+
+        <div class="title-card">
+            <div class="icon">🪪</div>
+            <div>
+                <span>Student ID</span>
+                <p>MA-21-IT-01185</p>
+            </div>
+        </div>
+
+        <div class="title-card">
+            <div class="icon">🎓</div>
+            <div>
+                <span>Course & Year</span>
+                <p>BSIT - 4th Year</p>
+            </div>
+        </div>
+
+        <div class="title-card">
+            <div class="icon">📅</div>
+            <div>
+                <span>Internship Period</span>
+                <p>Jan 2025 - March 2025</p>
+            </div>
+        </div>
+
+        <div class="title-card">
+            <div class="icon">🏢</div>
+            <div>
+                <span>Host Company</span>
+                <p>CAST Office</p>
+            </div>
+        </div>
+
+        <div class="title-card">
+            <div class="icon">👨‍🏫</div>
+            <div>
+                <span>Adviser</span>
+                <p>Marites D. Escultor</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ACKNOWLEDGEMENT -->
+<section id="ack" class="card">
+<div class="card-header"><h1>Acknowledgement</h1></div>
+
+<div class="card-body">
+<p>
+I would like to express my sincere gratitude to my instructors, supervisors,
+and colleagues who supported me throughout my internship journey.
+Their guidance and encouragement helped me grow professionally and personally.
+</p>
+</div>
+</section>
+
+<!-- TABLE OF CONTENTS -->
+<section id="toc" class="card">
+
+        <section id="toc" class="section">
+
+    <div class="toc-paper">
+
+        <!-- HEADER -->
+        <div class="toc-header">
+            <div class="toc-icon">☰</div>
+            <h2>Table of Contents</h2>
+        </div>
+
+        <div class="toc-line"></div>
+
+        <!-- CONTENT -->
+        <div class="toc-list">
+
+            <!-- MAIN -->
+            <div class="toc-row"><span>Title Page</span><span class="dots"></span></div>
+            <div class="toc-row"><span>Table of Contents</span><span class="dots"></span></div>
+            <div class="toc-row"><span>Acknowledgment</span><span class="dots"></span></div>
+            <div class="toc-row"><span>Student Trainee Prayer</span><span class="dots"></span></div>
+            <div class="toc-row"><span>Personal Philosophy</span><span class="dots"></span></div>
+            <div class="toc-row"><span>Career Plan</span><span class="dots"></span></div>
+
+            <!-- CHAPTER I -->
+            <div class="toc-row chapter"><span>Chapter I: Introduction</span><span class="dots"></span></div>
+            <div class="toc-sub"><span>A. Importance of Internship</span><span class="dots"></span></div>
+            <div class="toc-sub"><span>B. Objectives of Internship</span><span class="dots"></span></div>
+            <div class="toc-sub"><span>C. Time and Place</span><span class="dots"></span></div>
+
+            <!-- CHAPTER II -->
+            <div class="toc-row chapter"><span>Chapter II: Company Profile</span><span class="dots"></span></div>
+            <div class="toc-sub"><span>A. Nature of the Agency</span><span class="dots"></span></div>
+            <div class="toc-sub"><span>B. Mission/Vision/Goal Statement</span><span class="dots"></span></div>
+            <div class="toc-sub"><span>C. History/Background of the Agency/Office</span><span class="dots"></span></div>
+            <div class="toc-sub"><span>D. Organizational Structure</span><span class="dots"></span></div>
+
+            <!-- CHAPTER III -->
+            <div class="toc-row chapter"><span>Chapter III: Work Experiences</span><span class="dots"></span></div>
+            <div class="toc-sub"><span>A. Weekly Accomplishment Report</span><span class="dots"></span></div>
+            <div class="toc-sub"><span>B. Daily Time Record</span><span class="dots"></span></div>
+            <div class="toc-sub"><span>C. Internship Progress Report</span><span class="dots"></span></div>
+            <div class="toc-sub"><span>D. Internship Analysis Report</span><span class="dots"></span></div>
+
+            <!-- CHAPTER IV -->
+            <div class="toc-row chapter"><span>Chapter IV: Assessment of the Practicum Program</span><span class="dots"></span></div>
+            <div class="toc-sub"><span>A. Student Internship Evaluation Form</span><span class="dots"></span></div>
+
+            <!-- APPENDICES -->
+            <div class="toc-row chapter"><span>Appendices</span><span class="dots"></span></div>
+            <div class="toc-sub"><span>Appendix A: Evaluation Form</span><span class="dots"></span></div>
+            <div class="toc-sub"><span>Appendix B: Photocopy Registration Form</span><span class="dots"></span></div>
+            <div class="toc-sub"><span>Appendix C: Photocopy Validated ID</span><span class="dots"></span></div>
+            <div class="toc-sub"><span>Appendix D: Parent's Consent</span><span class="dots"></span></div>
+            <div class="toc-sub"><span>Appendix E: Medical Certificate</span><span class="dots"></span></div>
+            <div class="toc-sub"><span>Appendix F: Certificate of Good Moral Character & Application Letter</span><span class="dots"></span></div>
+            <div class="toc-sub"><span>Appendix G: Application Letter</span><span class="dots"></span></div>
+            <div class="toc-sub"><span>Appendix H: Endorsement Letter</span><span class="dots"></span></div>
+            <div class="toc-sub"><span>Appendix I: Memorandum of Agreement</span><span class="dots"></span></div>
+            <div class="toc-sub"><span>Appendix J: Daily Time Record (Time Card)</span><span class="dots"></span></div>
+            <div class="toc-sub"><span>Appendix K: Certificate of Completion</span><span class="dots"></span></div>
+            <div class="toc-sub"><span>Appendix L: Certificate of Clearance</span><span class="dots"></span></div>
+            <div class="toc-sub"><span>Appendix M: Pictures during Pre-service Seminar</span><span class="dots"></span></div>
+            <div class="toc-sub"><span>Appendix N: Pictures during Office Works</span><span class="dots"></span></div>
+            <div class="toc-sub"><span>Appendix O: Code of Ethics for CAST Student Internship</span><span class="dots"></span></div>
+            <div class="toc-sub"><span>Appendix P: Curriculum Vitae</span><span class="dots"></span></div>
+            <div class="toc-sub"><span>Appendix Q: On-the-Job Training Portfolio Evaluation Form</span><span class="dots"></span></div>
+
+        </div>
+
+    </div>
+
+</section>
+</section>
+
+<!-- PRAYER -->
+<section id="prayer" class="card">
+<<section id="prayer" class="section prayer-section">
+
+    <!-- BACKGROUND -->
+    <div class="prayer-bg"></div>
+
+    <!-- OVERLAY CONTENT -->
+    <div class="prayer-overlay">
+
+        <div class="cross">✝</div>
+
+        <h1 class="prayer-title">
+            STUDENT TRAINEE PRAYER
+        </h1>
+
+        <div class="divider"></div>
+
+        <p class="prayer-text">
+            Lord, guide me in my journey as a trainee. Grant me knowledge, patience,
+            and strength to face challenges. Help me grow into a responsible and
+            skilled professional. Amen.
+        </p>
+    </div>
+</section>
+</section>
+
+<!-- PHILOSOPHY -->
+<section id="philosophy" class="card">
+<div class="card-header"><h1>Personal Philosophy</h1></div>
+
+<div class="card-body">
+<p>
+I believe that continuous learning and hard work are the keys to success.
+Every experience is an opportunity to grow and improve myself both
+personally and professionally.
+</p>
+</div>
+</section>
+
+<!-- CAREER PLAN -->
+<section id="career" class="card">
+<div class="card-header"><h1>Career Plan</h1></div>
+
+<div class="card-body">
+<p>
+My goal is to become a successful IT professional specializing in software
+development. I aim to continuously improve my skills and contribute to
+innovative technological solutions.
+</p>
+</div>
+</section>
+
+<!-- CHAPTER I -->
+<section id="c1a" class="card">
+<div class="card-header"><h1>Importance of Internship</h1></div>
+
+<div class="card-body">
+<p>
+Internship provides real-world experience and helps students apply their
+academic knowledge in actual work settings. It enhances skills and builds confidence.
+</p>
+</div>
+</section>
+
+<section id="c1b" class="card">
+<div class="card-header"><h1>Objectives of Internship</h1></div>
+
+<div class="card-body">
+<ul>
+<li>Gain practical experience</li>
+<li>Develop professional skills</li>
+<li>Improve communication and teamwork</li>
+</ul>
+</div>
+</section>
+
+<section id="c1c" class="card">
+<div class="card-header"><h1>Time and Place</h1></div>
+
+<div class="card-body">
+<p>
+The internship was conducted at XYZ Company from January to March 2025.
+</p>
+</div>
+</section>
+
+<!-- CHAPTER II -->
+<section id="c2a" class="card">
+<div class="card-header"><h1>Nature of Agency</h1></div>
+<div class="card-body"><p>The company provides IT services and solutions.</p></div>
+</section>
+
+<section id="c2b" class="card">
+<div class="card-header"><h1>Mission / Vision</h1></div>
+<div class="card-body">
+<p><strong>Mission:</strong> To deliver quality services.</p>
+<p><strong>Vision:</strong> To become a leading IT provider.</p>
+</div>
+</section>
+
+<section id="c2c" class="card">
+<div class="card-header"><h1>History</h1></div>
+<div class="card-body">
+<p>The company was established to provide innovative IT solutions.</p>
+</div>
+</section>
+
+<section id="c2d" class="card">
+<div class="card-header"><h1>Organizational Structure</h1></div>
+<div class="card-body">
+<p>Includes managers, developers, and support staff.</p>
+</div>
+</section>
+
+<!-- CHAPTER III -->
+<section id="c3a" class="card">
+<div class="card-header"><h1>Weekly Report</h1></div>
+<div class="card-body"><p>Completed assigned tasks weekly.</p></div>
+</section>
+
+<section id="c3b" class="card">
+<div class="card-header"><h1>Daily Time Record</h1></div>
+<div class="card-body"><p>Tracked daily attendance and hours.</p></div>
+</section>
+
+<section id="c3c" class="card">
+<div class="card-header"><h1>Progress Report</h1></div>
+<div class="card-body"><p>Showed improvement in skills.</p></div>
+</section>
+
+<section id="c3d" class="card">
+<div class="card-header"><h1>Analysis Report</h1></div>
+<div class="card-body"><p>Analyzed learning outcomes.</p></div>
+</section>
+
+<!-- CHAPTER IV -->
+<section id="c4a" class="card">
+<div class="card-header"><h1>Evaluation Form</h1></div>
+<div class="card-body">
+<p>The internship performance was evaluated by supervisors.</p>
+</section>
+
+<!-- APPENDICES -->
+<section id="appendix" class="card">
+ 
+<h1>APPENDICES</h1>
+
+<div class="doc-grid">
+
+<!-- A -->
+<div class="doc-card">
+<h3>A. Evaluation Form</h3>
+<p>Student performance evaluation.</p>
+<a href="A.html">View</a>
+</div>
+
+<!-- B -->
+<div class="doc-card">
+<h3>B. Registration Form</h3>
+<p>Internship registration.</p>
+<a href="B.html">View</a>
+</div>
+
+<!-- C -->
+<div class="doc-card">
+<h3>C. Student ID</h3>
+<p>Identification card.</p>
+<a href="C.html">View</a>
+</div>
+
+<!-- D -->
+<div class="doc-card">
+<h3>D. Parent's Consent</h3>
+<p>Parent approval.</p>
+<a href="D.html">View</a>
+</div>
+
+<!-- E -->
+<div class="doc-card">
+<h3>E. Medical Certificate</h3>
+<p>Health clearance.</p>
+<a href="E.html">View</a>
+</div>
+
+<!-- F -->
+<div class="doc-card">
+<h3>F. Good Moral Character</h3>
+<p>Certificate.</p>
+<a href="F.html">View</a>
+</div>
+
+<!-- G -->
+<div class="doc-card">
+<h3>G. Application Letter</h3>
+<p>Application.</p>
+<a href="G.html">View</a>
+</div>
+
+<!-- H -->
+<div class="doc-card">
+<h3>H. Endorsement Letter</h3>
+<p>Endorsement.</p>
+<a href="H.html">View</a>
+</div>
+
+<!-- I -->
+<div class="doc-card">
+<h3>I. Memorandum of Agreement</h3>
+<p>Agreement.</p>
+<a href="I.html">View</a>
+</div>
+
+<!-- J -->
+<div class="doc-card">
+<h3>J. Daily Time Record</h3>
+<p>Attendance.</p>
+<a href="J.html">View</a>
+</div>
+
+<!-- K -->
+<div class="doc-card">
+<h3>K. Certificate of Completion</h3>
+<p>Completion.</p>
+<a href="K.html">View</a>
+</div>
+
+<!-- L -->
+<div class="doc-card">
+<h3>L. Clearance</h3>
+<p>Company clearance.</p>
+<a href="L.html">View</a>
+</div>
+
+<!-- M -->
+<div class="doc-card">
+<h3>M. Performance Rating</h3>
+<p>Evaluation.</p>
+<a href="M.html">View</a>
+</div>
+
+<!-- N -->
+<div class="doc-card">
+<h3>N. Seminar Pictures</h3>
+<p>Seminar photos.</p>
+<a href="N.html">View</a>
+</div>
+
+<!-- O -->
+<div class="doc-card">
+<h3>O. Office Work Pictures</h3>
+<p>Work photos.</p>
+<a href="O.html">View</a>
+</div>
+
+<!-- P -->
+<div class="doc-card">
+<h3>P. Code of Ethics</h3>
+<p>Rules.</p>
+<a href="P.html">View</a>
+</div>
+
+<!-- Q -->
+<div class="doc-card">
+<h3>Q. Curriculum Vitae</h3>
+<p>Resume.</p>
+<a href="Q.html">View</a>
+</div>
+
+<!-- R -->
+<div class="doc-card">
+<h3>R. Portfolio Evaluation</h3>
+<p>Final evaluation.</p>
+<a href="R.html">View</a>
+</div>
+</div>
+</section>
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
